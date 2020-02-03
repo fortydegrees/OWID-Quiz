@@ -26,7 +26,7 @@ const corsOptions = {
   "Access-Control-Allow-Origin": true
 };
 
-app.use(Cors(corsOptions));
+// app.use(Cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(helmet());
