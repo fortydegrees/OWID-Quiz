@@ -41,6 +41,7 @@ export const QuestionList = types.model({
       '//178.62.106.135:3003/getCharts', { params: { numQ } }
     )
     const charts = response.data
+    console.log(charts)
     charts.forEach((chart: Instance<typeof Question>) => {
       self.questions.push({ id: chart.id, title: chart.title, fileName: chart.fileName, options: chart.options.sort(() => Math.random() - 0.5) })
     })
