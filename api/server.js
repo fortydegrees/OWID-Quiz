@@ -12,7 +12,7 @@ const whitelist = [
   'http://localhost:3031',
   'http://localhost:3000',
   'http://localhost:3003',
-  'http://178.62.106.135/'
+  'http://178.62.106.135/',
 ];
 
 const corsOptions = {
@@ -27,7 +27,7 @@ const corsOptions = {
   "Access-Control-Allow-Origin": true,
 };
 
-// app.use(Cors(corsOptions));
+app.use(Cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(helmet());
