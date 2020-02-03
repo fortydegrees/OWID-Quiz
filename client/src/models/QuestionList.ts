@@ -20,11 +20,11 @@ export const Question = types.model({
     self.userAnswer = answer
     let id = self.id
     if (answer === self.title) getParent<RootInstance>(self, 3).addScore()
-    axios.put('//localhost:3003/addStats', { params: {id, userAnswer: answer}})
+    axios.put('//178.62.106.135:3003/addStats', { params: {id, userAnswer: answer}})
   },
   getSVG: flow(function* getSVG() {
     let id = self.id
-    const response = yield axios.get('//localhost:3003/getSVG', { params: { id } })
+    const response = yield axios.get('//178.62.106.135:3003/getSVG', { params: { id } })
     const svg: string = response.data.svg
     self.svg = btoa(unescape(encodeURIComponent(svg)))
   })
@@ -38,7 +38,7 @@ export const QuestionList = types.model({
   },
   getQuestions: flow(function* getQuestions(numQ: number) {
     const response = yield axios.get(
-      '//localhost:3003/getCharts', { params: { numQ } }
+      '//178.62.106.135:3003/getCharts', { params: { numQ } }
     )
     const charts = response.data
     charts.forEach((chart: Instance<typeof Question>) => {

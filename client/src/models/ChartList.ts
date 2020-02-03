@@ -30,7 +30,7 @@ export const ChartList = types.model({
     self.charts.length=0
     self.loaded = false
     const response = yield axios.get(
-      '//localhost:3003/getStats', { params: { minAnswered, paginator, limit, leastCorrect } }
+      '//178.62.106.135:3003/getStats', { params: { minAnswered, paginator, limit, leastCorrect } }
     )
     const charts = response.data.charts
     charts.forEach((chart: Instance<typeof Chart>) => {
