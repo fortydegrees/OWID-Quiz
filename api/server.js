@@ -23,6 +23,7 @@ const corsOptions = {
     }
   },
   optionsSuccessStatus: 200,
+  "Access-Control-Allow-Origin": true
 };
 
 app.use(Cors(corsOptions));
