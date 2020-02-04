@@ -1,12 +1,18 @@
 # Our World In Data Quiz Game
 
-## About This App
+[A live version of the game can be played here](http://178.62.106.135/)
 
-put image here
+![Question Preview](https://i.imgur.com/34JpjsE.png)
+
+A game based off [Our World In Data](https://ourworldindata.org/) chloropleth maps, where the title and context has been removed. The user's job is to guess which description matches the shown chart.
+
+## About This App
 
 The client uses MobX State Tree, Typescript and TailwindCSS.
 
 The api uses NodeJS, Express, and Cheerio to parse/scrape.
+
+Built with a mobile-first experience in mind.
 
 ## Running This App
 
