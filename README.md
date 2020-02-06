@@ -6,6 +6,8 @@
 
 A game based off [Our World In Data](https://ourworldindata.org/) chloropleth maps, where the title and context has been removed. The user's job is to guess which description matches the shown chart.
 
+Data was crawled from the [charts](https://ourworldindata.org/charts) page and is hosted locally. Questions are grouped by the unit used in the scale.
+
 ## About This App
 
 The client uses MobX State Tree, Typescript and TailwindCSS.
