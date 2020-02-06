@@ -2,6 +2,8 @@
 
 [A live version of the game can be played here](http://178.62.106.135/)
 
+You can also see the chart stats [here](http://178.62.106.135/stats)
+
 ![Question Preview](https://i.imgur.com/34JpjsE.png)
 
 A game based off [Our World In Data](https://ourworldindata.org/) chloropleth maps, where the title and context has been removed. The user's job is to guess which description matches the shown chart.
